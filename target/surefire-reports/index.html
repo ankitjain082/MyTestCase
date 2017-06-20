@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest">
-              <span class="suite-name border-passed">com.dataprovider.test.DataProviderTestNGTest</span>
+              <span class="suite-name border-failed">com.dataprovider.test.DataProviderTestNGTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" class="hide-methods failed suite-com.dataprovider.test.DataProviderTestNGTest"> (hide)</a> <!-- hide-methods failed suite-com.dataprovider.test.DataProviderTestNGTest -->
+                      <a href="#" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" class="show-methods failed suite-com.dataprovider.test.DataProviderTestNGTest"> (show)</a> <!-- show-methods failed suite-com.dataprovider.test.DataProviderTestNGTest -->
+                    </span>
+                    <div class="method-list-content failed suite-com.dataprovider.test.DataProviderTestNGTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="primeNO(2, true)">primeNO(2, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.dataprovider.test.DataProviderTestNGTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,22 @@
                     <div class="method-list-content passed suite-com.dataprovider.test.DataProviderTestNGTest">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="primeNO(10, false)">primeNO(10, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="primeNO(17, true)">primeNO(17, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="primeNO(7, true)">primeNO(7, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" title="com.dataprovider.test.DataProviderTestNGTest" hash-for-method="primeNO(6, false)">primeNO(6, false)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-com.dataprovider.test.DataProviderTestNGTest -->
@@ -117,6 +146,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.dataprovider.test.DataProviderTestNGTest" class="panel com.dataprovider.test.DataProviderTestNGTest">
+          <div class="suite-com.dataprovider.test.DataProviderTestNGTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.dataprovider.test.DataProviderTestNGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="primeNO(2, true)">
+                  </a> <!-- primeNO(2, true) -->
+                  <span class="method-name">primeNO</span>
+                  <span class="parameters">(2, true)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Number not matchingtrue false expected [false] but found [true]
+	at com.dataprovider.test.DataProviderTestNGTest.primeNO(DataProviderTestNGTest.java:24)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.dataprovider.test.DataProviderTestNGTest-class-failed -->
           <div class="suite-com.dataprovider.test.DataProviderTestNGTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -125,9 +174,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openURL">
-                  </a> <!-- openURL -->
-                  <span class="method-name">openURL</span>
+                  <a name="primeNO(10, false)">
+                  </a> <!-- primeNO(10, false) -->
+                  <span class="method-name">primeNO</span>
+                  <span class="parameters">(10, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="primeNO(17, true)">
+                  </a> <!-- primeNO(17, true) -->
+                  <span class="method-name">primeNO</span>
+                  <span class="parameters">(17, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="primeNO(7, true)">
+                  </a> <!-- primeNO(7, true) -->
+                  <span class="method-name">primeNO</span>
+                  <span class="parameters">(7, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="primeNO(6, false)">
+                  </a> <!-- primeNO(6, false) -->
+                  <span class="method-name">primeNO</span>
+                  <span class="parameters">(6, false)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +257,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openURL')
+data.setCell(0, 1, 'primeNO')
 data.setCell(0, 2, 'com.dataprovider.test.DataProviderTestNGTest')
-data.setCell(0, 3, 5240);
+data.setCell(0, 3, 2);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'primeNO')
+data.setCell(1, 2, 'com.dataprovider.test.DataProviderTestNGTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'primeNO')
+data.setCell(2, 2, 'com.dataprovider.test.DataProviderTestNGTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'primeNO')
+data.setCell(3, 2, 'com.dataprovider.test.DataProviderTestNGTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'primeNO')
+data.setCell(4, 2, 'com.dataprovider.test.DataProviderTestNGTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['com.dataprovider.test.DataProviderTestNGTest']= { tableData: data, tableDiv: 'times-div-com.dataprovider.test.DataProviderTestNGTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 2 ms</span>
               <div id="times-div-com.dataprovider.test.DataProviderTestNGTest">
               </div> <!-- times-div-com.dataprovider.test.DataProviderTestNGTest -->
             </div> <!-- times-div -->
@@ -219,22 +309,48 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.dataprovider.test.DataProviderTestNGTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">server</span>
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">openURL</span>
-                <span class="method-start">3895 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">primeNO(2, true)</span>
+                <span class="method-start">4 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">clearCache</span>
-                <span class="method-start">9135 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">cLosebrowser</span>
-                <span class="method-start">9144 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">primeNO(6, false)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">primeNO(7, true)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">primeNO(10, false)</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">primeNO(17, true)</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

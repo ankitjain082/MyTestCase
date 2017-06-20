@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.dataprovider.test.DataProviderTestNGTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.806 sec
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec <<< FAILURE!
+primeNO(com.dataprovider.test.DataProviderTestNGTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: Number not matchingtrue false expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at com.dataprovider.test.DataProviderTestNGTest.primeNO(DataProviderTestNGTest.java:24)
+
